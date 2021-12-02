@@ -1,4 +1,6 @@
 # AdventOfCode
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.
 
-Solutions of daily task are in Python3
+People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
+
+Solutions of daily tasks are in Python3
