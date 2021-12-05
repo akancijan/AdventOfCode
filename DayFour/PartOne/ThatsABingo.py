@@ -23,6 +23,7 @@ def check_winner(current_score_matrix):
     for i in range(current_score_matrix.shape[0]):
         for j in range(current_score_matrix.shape[1]):
             if np.all(current_score_matrix[i][:, j] == 1):
+
                 print(f'Winning matrix : {i}')
                 print(current_score_matrix[i])
                 print()
@@ -41,17 +42,17 @@ def check_winner(current_score_matrix):
 # bingo_number_draws = [7, 4, 9, 5, 11, 17, 23, 2, 0, 14, 21, 24, 10, 16, 13, 6, 15, 25, 12, 22, 18, 20, 8, 19, 3, 26, 1]
 
 # Column test numbers
-#bingo_number_draws = [4, 19, 20, 5, 7, 14, 21, 17, 24]
+bingo_number_draws = [0, 13, 7, 10, 16]
 
 # Final solution bingo numbers
 # ( I manually added these to ease up the handling of file to focus only on the bingo cards )
-bingo_number_draws = [46, 79, 77, 45, 57, 34, 44, 13, 32, 88, 86, 82, 91, 97, 89, 1, 48, 31, 18, 10, 55, 74, 24, 11, 80, 78, 28, 37, 47, 17, 21, 61, 26, 85, 99, 96, 23, 70, 3, 54, 5, 41, 50, 63, 14, 64, 42, 36, 95, 52, 76, 68, 29, 9, 98, 35, 84, 83, 71, 49, 73, 58, 56, 66, 92, 30, 51, 20, 81, 69, 65, 15, 6, 16, 39, 43, 67, 7, 59, 40, 60, 4, 90, 72, 22, 0, 93, 94, 38, 53, 87, 27, 12, 2, 25, 19, 8, 62, 33, 75]
+#bingo_number_draws = [46, 79, 77, 45, 57, 34, 44, 13, 32, 88, 86, 82, 91, 97, 89, 1, 48, 31, 18, 10, 55, 74, 24, 11, 80, 78, 28, 37, 47, 17, 21, 61, 26, 85, 99, 96, 23, 70, 3, 54, 5, 41, 50, 63, 14, 64, 42, 36, 95, 52, 76, 68, 29, 9, 98, 35, 84, 83, 71, 49, 73, 58, 56, 66, 92, 30, 51, 20, 81, 69, 65, 15, 6, 16, 39, 43, 67, 7, 59, 40, 60, 4, 90, 72, 22, 0, 93, 94, 38, 53, 87, 27, 12, 2, 25, 19, 8, 62, 33, 75]
 bingo_matrix_str = []
 
 # Read input file into an array
-with open('input.txt', 'r') as f:
+# Swap between 'example.txt' and 'input.txt'
+with open('example.txt', 'r') as f:
     bingo_matrix_str = [[str(num) for num in line.split('\n')] for line in f if line.strip() != ""]
-# print(bingo_matrix_str)
 
 # Edit read array to remove unwanted symbols
 for row in bingo_matrix_str:
