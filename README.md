@@ -3,4 +3,6 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 
 People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
 
+https://adventofcode.com/
+
 Solutions of daily tasks are in Python3
