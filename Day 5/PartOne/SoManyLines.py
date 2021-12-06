@@ -54,6 +54,7 @@ for item in line_coordinates_matrix:
         # Move line from min to max
         for i in range(min_coord, max_coord + 1):
             movement_field[i][item[0]] += 1
+
     # check if y1 = y2
     if item[1] == item[3]:
         if item[0] > item[2]:
